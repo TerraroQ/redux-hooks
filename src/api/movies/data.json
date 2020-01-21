@@ -1,0 +1,19 @@
+{
+	"movies": [
+		{
+			"id": 0,
+			"title": "The Shawshank Redemption",
+			"release": "1994"
+		},
+		{
+			"id": 1,
+			"title": "The Godfather",
+			"release": "1972"
+		},
+		{
+			"id": 2,
+			"title": "The Dark Knight",
+			"release": "2008"
+		}
+	]
+}

@@ -4,7 +4,7 @@ import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { addTodo, deleteTodo, toggleTodo, addMovie, deleteMovie, toggleMovie } from '../actions';
 import { getAllTodos, getCompletedTodos, getAllMovies, getNewMovies } from '../selectors';
 
-export const ShowTodos = () => {
+export const useTodos = () => {
     const todos = useSelector(getAllTodos, shallowEqual);
     const completedTodos = useSelector(getCompletedTodos, shallowEqual);
     return {
@@ -13,7 +13,7 @@ export const ShowTodos = () => {
     };
 };
 
-export const ShowMovies = () => {
+export const useMovies = () => {
     const movies = useSelector(getAllMovies, shallowEqual);
     const newMovies = useSelector(getNewMovies, shallowEqual);
     return {
@@ -22,7 +22,7 @@ export const ShowMovies = () => {
     };
 };
 
-export const UseMovie = () => {
+export const useMovie = () => {
     const dispatch = useDispatch();
     const deleteMovieItem = useCallback(
         movie => {
@@ -51,7 +51,7 @@ export const UseMovie = () => {
 
 
 
-export const UseTodo = () => {
+export const useTodo = () => {
     const dispatch = useDispatch();
     const deleteTodoItem = useCallback(
         todo => {

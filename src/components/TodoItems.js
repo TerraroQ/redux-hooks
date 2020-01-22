@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
 import Todo from './Todo';
-import { ShowTodos,  DeleteTodo, ToggleTodo, UseTodo } from '../hooks';
+import { useTodos, useTodo  } from '../hooks';
 
 const TodoItems = () => {
-    const { todos, completedTodos } = ShowTodos();
-    const { deleteTodo, toggleTodo } = UseTodo();
+    const { todos, completedTodos } = useTodos();
+    const { deleteTodo, toggleTodo } = useTodo();
 
     const StyledTodoList = styled.ul`
         background: palevioletred;

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
 import Movie from './Movie';
-import { ShowMovies, UseMovie } from '../hooks';
+import { useMovies, useMovie } from '../hooks';
 
 const MovieItems = () => {
-    const { movies, newMovies } = ShowMovies();
-    const { deleteMovie, toggleMovie } = UseMovie();
+    const { movies, newMovies } = useMovies();
+    const { deleteMovie, toggleMovie } = useMovie();
 
     const StyledMovieList = styled.ul`
         background: palevioletred;

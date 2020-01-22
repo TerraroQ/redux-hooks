@@ -1,9 +1,9 @@
 import React from 'react';
-import { UseTodo } from '../hooks';
+import { useTodo } from '../hooks';
 
 const AddTodoForm = () => {
     let input;
-    const { addTodo } = UseTodo();
+    const { addTodo } = useTodo();
     return (
         <React.Fragment>
             <form

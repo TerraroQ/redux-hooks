@@ -5,7 +5,7 @@ import MovieItems from '../components/MovieItems';
 
 const TodoList = () => (
     <div>
-        {/* <AddMovieForm /> */}
+        <AddMovieForm />
         <MovieItems />
     </div>
 );

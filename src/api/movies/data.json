@@ -3,17 +3,20 @@
 		{
 			"id": 0,
 			"title": "The Shawshank Redemption",
-			"release": "1994"
+			"release": "1994",
+			"completed": false
 		},
 		{
 			"id": 1,
 			"title": "The Godfather",
-			"release": "1972"
+			"release": "1972",
+			"completed": false
 		},
 		{
 			"id": 2,
 			"title": "The Dark Knight",
-			"release": "2008"
+			"release": "2008",
+			"completed": false
 		}
 	]
 }

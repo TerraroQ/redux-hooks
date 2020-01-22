@@ -1,9 +1,9 @@
 // let nextTodoId = 0;
 export const addTodo = (text, id, completed) => ({
   type: 'ADD_TODO',
-  id: id,
+  id,
   text,
-  completed: completed
+  completed
 })
 export const deleteTodo = id => ({
   type: 'DELETE_TODO',
@@ -16,10 +16,10 @@ export const toggleTodo = id => ({
 
 export const addMovie = (title, release, id, completed) => ({
   type: 'ADD_MOVIE',
-  id: id,
-  title: title,
-  release: release,
-  completed: completed
+  id,
+  title,
+  release,
+  completed
 })
 export const deleteMovie = id => ({
   type: 'DELETE_MOVIE',

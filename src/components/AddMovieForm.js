@@ -1,9 +1,9 @@
 import React from 'react';
-import { UseTodo } from '../hooks';
+import { useMovie } from '../hooks';
 
 const AddMovieForm = () => {
     let input;
-    const { addTodo } = UseTodo();
+    const { addMovie } = useMovie();
     return (
         <React.Fragment>
             <form
@@ -12,11 +12,12 @@ const AddMovieForm = () => {
                     if (!input.value.trim()) {
                         return;
                     }
-                    addTodo(input.value);
+                    addMovie(input.value);
                     input.value = '';
                 }}
             >
                 <input ref={node => (input = node)} />
+                {/* <input ref={node => (input = node)} /> */}
                 <button type="submit">Add Todo</button>
             </form>
         </React.Fragment>
